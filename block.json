@@ -1,0 +1,16 @@
+{
+    "apiVersion": 2,
+    "name": "bestsellers/block",
+    "title": "Bestsellers Block",
+    "icon": "book",
+    "category": "widgets",
+    "attributes": {
+        "genre": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "editorScript": "file:./build/index.js",
+    "editorStyle": "file:./src/editor.css",
+    "style": "file:./src/style.css"
+}

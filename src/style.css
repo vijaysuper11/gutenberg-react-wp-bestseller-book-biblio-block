@@ -1,0 +1,126 @@
+.bestsellers-block {
+    padding: 20px; /* 20px internal padding */
+    background-color: #E6E6E6; /* Content area background color */
+}
+
+.bestsellers-block h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px; /* Top header font size */
+    font-weight: bold; /* Top header bold */
+}
+
+.book-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.book-card {
+    background-color: #fff;
+    padding: 20px; /* 20px internal padding */
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.book-card h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; /* Title font size */
+    font-weight: 600; /* Demi-bold font weight for title */
+    margin-top: 15px;
+    
+}
+
+.block-card h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.13px;
+    margin-bottom: 10px;
+}
+
+.buy-now-button {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #FF6401; /* Buy button background color */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* Buy button font size */
+    padding: 10px 20px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buy-now-button:hover {
+    background-color: #e65c01; /* Darker shade on hover */
+}
+.author-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+}
+.bottom{padding-top:20px;}
+.responsive-svg {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .bestsellers-block h3 {
+        font-size: 22px;
+    }
+
+    .book-card {
+        width: 45%;
+    }
+
+    .buy-now-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bestsellers-block h3 {
+        font-size: 20px;
+    }
+
+    .book-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .buy-now-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .book-card {
+        width: 250px;
+    }
+
+    .buy-now-button {
+        font-size: 16px;
+        padding: 12px 25px;
+        color: #000;
+        font-weight: 500;
+    }
+}
